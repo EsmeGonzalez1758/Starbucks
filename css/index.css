@@ -443,3 +443,228 @@ body {
     color: black;
     text-decoration: none; /* Evita el subrayado al hacer hover */
 }
+
+/* Media query específica para tablet */
+@media only screen and (min-width: 1024px) and (max-width: 2048px) and (min-height: 1366px) and (max-height: 2732px) {
+    /* Ajuste de tarjetas grandes */
+    #tarjeta-uno, #tarjeta-dos, #tarjeta-tres, #tarjeta-cuatro, #tarjeta-cinco {
+        width: 90%; /* Tarjetas más grandes */
+        margin: 20px auto; /* Centrado y margen superior e inferior */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .contenedor-texto {
+        width: 50%; /* Más espacio para el texto */
+        padding: 10px;
+    }
+
+    .contenedor-imagen1 img {
+        width: 100%;
+        height: auto; /* Imagen adaptativa */
+        max-height: 450px; /* Máxima altura */
+    }
+
+    /* Ajuste de tarjetas pequeñas */
+    #tarjetas-pequenas {
+        display: flex;
+        flex-wrap: wrap; /* Evitar desbordamiento */
+        justify-content: space-between;
+        gap: 20px; /* Espacio entre tarjetas */
+        margin: 0 auto; /* Centrado del contenedor */
+        width: 90%;
+    }
+
+    #tarjeta-pequena1, #tarjeta-pequena2 {
+        flex: 1 1 calc(48% - 20px); /* Ocupan el 48% del ancho con espacio */
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        min-height: 200px; /* Altura mínima uniforme */
+    }
+
+    /* Navbar botones */
+    .navbar-button {
+        font-size: 1.2rem; /* Tamaño del texto */
+        padding: 10px 20px; /* Espaciado interno */
+        margin: 0 10px; /* Espaciado entre botones */
+        white-space: nowrap; /* Evita que se desborden */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px; /* Ajustar espaciado */
+    }
+    /* Espacio en blanco antes del footer */
+    #espacio-blanco {
+        height: 40px;
+    }
+    
+    /* Línea con sombra */
+    .footer-line {
+        border: 0;
+        height: 1px;
+        background: white; /* Línea tenue */
+        margin: 20px 0;
+        box-shadow: 0px -6px 5px 0px rgba(107,107,107,0.75); /* Sombra de color gris */
+    }
+    
+    /* Estilos para el footer */
+    .footer {
+        background-color: white;
+        color: black;
+        padding: 20px 0;
+        text-align: left; /* Alinea el texto a la izquierda */
+        font-family: "Catamaran", sans-serif;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-left {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .footer-section {
+        padding: 10px;
+    }
+    
+    .footer-section h3 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        text-transform: none; /* Asegura que el texto esté en minúsculas */
+        font-weight: normal; /* Quita el negritas excesivo */
+        color: black;
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+    
+    .footer-section ul li a {
+        color: gray;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+    
+    .footer-section ul li a:hover {
+        color: black;
+        text-decoration: none; /* Evita el subrayado al hacer hover */
+    }
+    
+    .footer-line {
+        border: 0;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.1); /* Línea tenue */
+        margin: 20px 0;
+    }
+    
+    .footer-line2 {
+        border: 0;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.1); /* Línea tenue */
+        margin: 20px 0;
+    }
+    
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .footer-social a {
+        margin: 0 15px; /* Más espacio entre íconos */
+        display: inline-block;
+        transition: transform 0.3s ease; /* Transición para el efecto de movimiento */
+    }
+    
+    .footer-social a:hover {
+        transform: translateY(-5px); /* Movimiento hacia arriba al hacer hover */
+    }
+    
+    .footer-social img.social-icon {
+        width: 40px; /* Ajusta el tamaño según sea necesario */
+        height: 40px; /* Ajusta el tamaño según sea necesario */
+    }
+    
+    .footer-bottom {
+        margin: 20px 0;
+    }
+    
+    .footer-bottom ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer-bottom ul li {
+        margin: 0 10px;
+    }
+    
+    .footer-bottom ul li a {
+        color: #a9a9a9; /* Color gris más fuerte */
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+    
+    .footer-bottom ul li a:hover {
+        color: black;
+        text-decoration: none; /* Evita el subrayado al hacer hover */
+    }
+    
+    .footer-bottom ul li span {
+        color: #a9a9a9; /* Color gris más fuerte para el separador */
+    }
+    
+    .footer-copyright {
+        font-size: .875rem;
+        margin-top: 20px;
+        padding-top: 10px; /* Elimina la línea adicional */
+        width: 100%;
+        text-align: center; /* Centra el texto del copyright */
+        color: gray;
+    }
+    
+    .footer-copyright small {
+        display: block;
+        margin-top: 10px;
+        color: gray;
+        font-size: .625rem;
+    }
+    
+    .footer-section ul li a[href*="trabaja"]:hover,
+    .footer-section ul li a[href*="historias"]:hover,
+    .footer-section ul li a[href*="contactanos"]:hover,
+    .footer-section ul li a[href*="facturas"]:hover,
+    .footer-section ul li a[href*="formas"]:hover {
+        color: black;
+        text-decoration: none; /* Evita el subrayado al hacer hover */
+    }
+}
+
