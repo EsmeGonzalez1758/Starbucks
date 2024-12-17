@@ -5,3 +5,4 @@
 ## 3er Avance: Creacion de Navbar y Footer##
 ## 4to Avance: Pagina responsiva del index##
 ## 5to Avance: Creacion de la Ventana rewards y uso del grid##
+### PROYECTO TERMINADO ###
